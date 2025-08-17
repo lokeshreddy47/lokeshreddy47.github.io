@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devarapalli Lokeshreddy - Cybersecurity Analyst</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c0d11; /* Even darker background */
+            color: #d1d5db; /* Lighter gray text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .section {
+            background-color: #1a1b1e;
+            border: 1px solid #374151;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .section-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+        .header-link {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .header-link:hover {
+            color: #3b82f6; /* A more vibrant blue */
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-[#0c0d11] text-gray-300">
+
+    <!-- Navigation Header -->
+    <header class="bg-[#1a1b1e] sticky top-0 z-50 shadow-lg border-b border-gray-700">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-blue-500">Lokeshreddy</h1>
+            <div class="hidden md:flex space-x-6 text-lg">
+                <a href="#about" class="header-link hover:text-blue-400 font-medium">About</a>
+                <a href="#projects" class="header-link hover:text-blue-400 font-medium">Projects</a>
+                <a href="#skills" class="header-link hover:text-blue-400 font-medium">Skills</a>
+                <a href="#contact" class="header-link hover:text-blue-400 font-medium">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-blue-500 text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1a1b1e] px-4 pb-4 border-t border-gray-700">
+            <a href="#about" class="block py-2 text-white hover:text-blue-400 border-b border-gray-700">About</a>
+            <a href="#projects" class="block py-2 text-white hover:text-blue-400 border-b border-gray-700">Projects</a>
+            <a href="#skills" class="block py-2 text-white hover:text-blue-400 border-b border-gray-700">Skills</a>
+            <a href="#contact" class="block py-2 text-white hover:text-blue-400">Contact</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- About Section -->
+        <section id="about" class="section mt-8 flex flex-col md:flex-row items-center md:space-x-12">
+            <div class="mb-8 md:mb-0 w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-blue-500 shadow-md">
+                <!-- Placeholder image - you can replace this with your own profile picture URL -->
+                <img src="https://placehold.co/300x300/1e293b/d1d5db?text=LDR" alt="Lokeshreddy Profile" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-2 leading-tight">Devarapalli Lokeshreddy</h2>
+                <p class="text-xl md:text-2xl text-blue-400 font-medium mb-6">Cybersecurity Analyst</p>
+                <p class="max-w-prose text-lg text-gray-400 leading-relaxed">
+                    An experienced cybersecurity analyst with a proven ability to identify and mitigate cyber threats through academic and virtual projects. Skilled in leveraging tools like Nessus and Wireshark for vulnerability assessment and security monitoring. Seeking to apply a deep understanding of ethical hacking and compliance to contribute to a secure and resilient organizational environment.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="text-3xl font-bold text-white mb-8 border-b-2 border-blue-500 pb-2">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- AntiPhishX Project -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-inner border border-gray-700 hover:bg-gray-700 transition-colors section-hover">
+                    <h3 class="text-2xl font-semibold text-white mb-2">AntiPhishX</h3>
+                    <p class="text-gray-400 mb-4 text-sm md:text-base">
+                        A comprehensive phishing detection system that uses Natural Language Processing (NLP) on the back end and a modern Next.js interface on the front end to analyze and visualize email threats.
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-medium text-white">Tools Used:</span> <span class="text-blue-400">Next.JS, Clerk.JS, TF-IDF, Scikit-learn, Docker</span>
+                    </p>
+                    <a href="#" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-400 font-medium transition-colors">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                </div>
+                <!-- Threat Scope Project -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-inner border border-gray-700 hover:bg-gray-700 transition-colors section-hover">
+                    <h3 class="text-2xl font-semibold text-white mb-2">Threat Scope</h3>
+                    <p class="text-gray-400 mb-4 text-sm md:text-base">
+                        An AI-powered phishing detection platform using Gemini AI, FastAPI, and React, capable of analyzing suspicious emails, highlighting red flags, and generating real-time phishing risk scores.
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-medium text-white">Tools Used:</span> <span class="text-blue-400">React.JS, Gemini AI API, FastAPI</span>
+                    </p>
+                    <a href="#" target="_blank" class="inline-flex items-center text-blue-500 hover:text-blue-400 font-medium transition-colors">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="section">
+            <h2 class="text-3xl font-bold text-white mb-8 border-b-2 border-blue-500 pb-2">Skills & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Core Skills</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400">
+                        <li>Vulnerability Assessment</li>
+                        <li>Monitoring</li>
+                        <li>Penetration Testing (Basic to Intermediate)</li>
+                        <li>Incident Response</li>
+                        <li>Log Analysis</li>
+                        <li>Risk Assessment</li>
+                        <li>Security Reports</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Certifications</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-400">
+                        <li>Introduction to Cyber Security - Cisco Networking Academy (2023)</li>
+                        <li>Tata Cybersecurity Analyst Virtual Experience - Forage (2025)</li>
+                        <li>Deloitte Cybersecurity Job Simulation - Forage (2025)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="section">
+            <h2 class="text-3xl font-bold text-white mb-8 border-b-2 border-blue-500 pb-2">Experience & Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Experience Column -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Experience</h3>
+                    <ul class="space-y-6">
+                        <li>
+                            <h4 class="text-xl font-medium text-white">Cybersecurity Virtual Internships - Forage (Deloitte, Tata Consultancy Services)</h4>
+                            <p class="text-gray-400 text-sm italic">Completed real-world simulations in incident response, log analysis, and vulnerability assessment.</p>
+                            <p class="text-gray-400 text-sm italic">Prepared security reports aligned with industry practices.</p>
+                            <p class="text-gray-400 text-sm italic">Gained exposure to risk assessment methodologies and SOC workflows.</p>
+                        </li>
+                        <li>
+                            <h4 class="text-xl font-medium text-white">Kabaddi, Student Coordinator</h4>
+                            <p class="text-gray-400 text-sm italic">Organised NUKL Season 1, Inter house kabaddi competition.</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Education Column -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Education</h3>
+                    <ul class="space-y-6">
+                        <li>
+                            <h4 class="text-xl font-medium text-white">B.Tech Cybersecurity, NIIT University</h4>
+                            <p class="text-gray-400">Aug 2022 - July 2026</p>
+                        </li>
+                        <li>
+                            <h4 class="text-xl font-medium text-white">XIth, XIIth, Sri Chaitanya Junior College, Khammam</h4>
+                            <p class="text-gray-400">2021-2022</p>
+                        </li>
+                        <li>
+                            <h4 class="text-xl font-medium text-white">Xth, Sri Chaitanya Olympiad School, Khammam</h4>
+                            <p class="text-gray-400">2020</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="bg-[#1a1b1e] py-12 border-t border-gray-700">
+        <div class="container text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get in Touch</h2>
+            <div class="flex justify-center space-x-6 mb-8 text-2xl">
+                <!-- Email -->
+                <a href="mailto:devarapalli.reddy22@st.niituniversity.in" class="text-gray-400 hover:text-blue-500 transition-colors">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <!-- Phone -->
+                <a href="tel:+919063138903" class="text-gray-400 hover:text-blue-500 transition-colors">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/lokesh reddy devarapalli" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/lokeshreddy47" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 Devarapalli Lokeshreddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
